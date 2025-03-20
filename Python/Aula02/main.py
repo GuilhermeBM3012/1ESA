@@ -22,6 +22,8 @@ print(frase)
 
 print('-------------------------------------------------------')
 
+#CALCULADORA INTELIGENTE
+
 nome = input("Diga o seu nome: ")
 print(f"Olá, {nome}! Bem vindo à calculadora inteligente! ")
 a = int(input("Diga o primeiro número: "))
@@ -56,7 +58,7 @@ else:
 
 print('------------------------------------------------------------------------------')
 
-#AND e OR
+#OR
 
 a = 2
 b = 3
@@ -66,6 +68,7 @@ print(f"O resultado de {a} <= {b} or {a} >= {b}, ou seja,{2 <= 3} or {2 >= 3} d�
 print(f"O resultado de {a} >= {b} or {a} > {b}, ou seja,{2 >= 3} or {2 > 3} dá {2 >= 3 or 3 > 2}")
 
 print('----------------------------------------------------------------------------------------------------')
+
 #VER SE PODE ESTACIONAR
 
 idade = int(input("Diga a sua idade: "))
