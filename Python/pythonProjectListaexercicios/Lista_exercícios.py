@@ -103,7 +103,7 @@ else:
 
 print('-----------------------------------------------------------')
 
-# 10: IDENTIFICAR O TRIÂNGULO PELOS ÂNGULOS
+# 10: IDENTIFICAR O TRIÂNGULO PELOS LADOS
 n = int(input('Diga o primeiro lado: '))
 n1 = int(input('Diga o segundo lado: '))
 n2 = int(input('Diga o terceiro lado: '))
