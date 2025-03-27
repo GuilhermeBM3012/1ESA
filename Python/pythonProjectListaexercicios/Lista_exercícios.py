@@ -122,7 +122,7 @@ n1 = int(input('Diga o segundo ângulo: '))
 n2 = int(input('Diga o terceiro ângulo: '))
 if n or n1 or n2 == 90:
     print('Seu triânguilo é retângulo!!! ')
-elif n or n1 or n2 >= 90:
+elif n or n1 or n2 > 90:
     print('Seu triânguilo é obtusângulo!!! ')
 else:
     print('Seu triânguilo é acutângulo!!! ')
