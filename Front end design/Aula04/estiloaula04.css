@@ -1,0 +1,15 @@
+h1, h2 {
+    color: greenyellow;
+}
+
+.desafio1 {
+    color: orange;
+}
+
+#lista1, #lista2 {
+    color: #0000ff;
+}
+
+.Body {
+    background-color: rgba(211,211,211,1);
+}

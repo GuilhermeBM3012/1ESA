@@ -1,0 +1,24 @@
+/* seletor em css pode ser: tag, class ou id 
+seletor{
+    propriedade1: valor;
+    propriedade2: valor;
+} */
+
+h1{
+    color:red;
+    font-family: "Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
+    font-size 60px;
+}
+
+section{
+    padding: 50px 30px 20px 60px;
+    margin-left: 40px;
+}
+section article {
+    background-color: gray;
+    width: 500px;
+    height: 500px;
+}
+section article p {
+    line-height: 4;
+}
