@@ -76,19 +76,22 @@ else:
 n = int(input('Diga o primeiro valor: '))
 n1 = int(input('Diga o segundo valor valor: '))
 n2 = int(input('Diga o terceiro valor: '))
-if (n > n1) and (n > n2):
+if n > n1:
     aux = n
-    n = n2
-    n2 = aux
-elif n1 > n2:
+    n = n1
+    n1 = aux
+    print(n, n1, n2)
+if n1 > n2:
     aux = n1
     n1 = n2
     n2 = aux
+    print(n, n1, n2)
 if n1 < n:
-    aux = n
-    n = n2
-    n2 = aux
+    aux = n1
+    n1 = n
+    n = aux
 print(n, n1, n2)
+
 
 print('------------------------------------------------')
 
