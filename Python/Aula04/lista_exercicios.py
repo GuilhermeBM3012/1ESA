@@ -167,7 +167,7 @@ else:
 n = int(input('Diga o primeiro valor: '))
 n1 = int(input('Diga o segundo valor: '))
 n2 = int(input('Diga o terceiro valor: '))
-maior = a
+maior = n
 if n1 > maior:
     maior = n1
 if n2 > maior:
