@@ -73,7 +73,7 @@ mult = a * b
 div = a/b
 pot = a ** b
 
-# opcao = input('Qual operação gostaria de fazer?\nsoma\nsubtração\nmultiplicação\ndivisão\npotência')
+opcao = input('Qual operação gostaria de fazer?\nsoma\nsubtração\nmultiplicação\ndivisão\npotência')
 print('Para somar [1] ')
 print('Para subtrair [2] ')
 print('Para multiplicar [3] ')
