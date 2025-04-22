@@ -1,0 +1,94 @@
+body {
+    font-size: large;
+}
+
+/* passa o mouse por cima e faz algo */
+div:hover {
+    color: orange
+}
+
+/* quando clica, ou seja, torna ativo, e faz algo */
+a:active {
+    color:blue
+}
+/* link q vai ser ou ja foi visitado e faz algo */
+a:visited {
+    color:red
+}
+
+/* recebe o foco, comum em campos de textos */
+input:focus {
+    background-color: yellow
+}
+
+/* estilia o primeiro, algum de sua escolha e ultimo item da lista */
+li:first-child {
+    color:orangered
+}
+li:last-child {
+    color:orangered
+}
+li:nth-child(2n+2) { /*o n=0, por isso q o 2º item fica verde. Depois o n=1, por isso o 4º item fica verde e assim por diante, pulando de 2 em 2*/
+    color: green;
+}
+
+/* nega algo para NÃO personalizar */
+li:not(.meu-item) {
+    color:orange
+}
+
+:checked {
+    margin-left: 25px;
+}
+
+input[type="radio"]:checked {
+    margin-left: 25px;
+}
+
+input [type="checkbox"]:checked {
+    margin-left: 25px;
+}
+
+option:checked {
+    color: red;
+}
+
+/* fica desativado, n pode interagir */
+input:disabled {
+    background: #ccc;
+}
+input[type="text"]:disabled {
+    background: #ccc;
+}
+
+/* selecionar campos de formulário cujos dados de entrada estejam de acordo, ou não, com o formato requerido para o campo*/
+input[type=email]:invalid {
+    background: orange;
+}
+input[type=email]:valid {
+    background: green;
+}
+
+::placeholder {
+    color:yellowgreen
+}
+
+/* personaliza a primeira letra e linha */
+p::first-letter{
+    color: red;
+    text-transform: uppercase;
+}
+p::first-line {
+    color:blue
+}
+
+/* personaliza o elemento selecionado com o mouse */
+p::selection {
+    color: red;
+    background: yellow;
+}
+
+::marker {
+    color: red;
+    font-size: 23px;
+}
