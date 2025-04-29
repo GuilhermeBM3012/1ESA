@@ -74,11 +74,18 @@ input[type=email]:valid {
 }
 
 /* personaliza a primeira letra e linha */
-p::first-letter{
+#p1::first-letter{
     color: red;
     text-transform: uppercase;
 }
-p::first-line {
+#p1::first-line {
+    color:blue
+}
+#p2::first-letter{
+    color: red;
+    text-transform: uppercase;
+}
+#p2::first-line {
     color:blue
 }
 
