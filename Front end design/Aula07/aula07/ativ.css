@@ -1,0 +1,19 @@
+.vazio{
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    position: absolute;
+}
+
+.radial{
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(blue, aqua);
+    position: absolute;
+}
+
+div.radial:hover{
+    transform: translate(10px, 20px);
+    transform: rotate(30deg);
+    transform: skew(10deg, 20deg);
+}
