@@ -364,4 +364,5 @@ print(f'Joao - {qnt_candidato_1} votos'
       f'\nLucas - {qnt_candidato_4}'
       f'\nbrancos - {brancos}'
       f'\nNulos - {nulos}')
-print(f'A porcentagem de votos nulos foi de {100*nulos}')
+print(f'A porcentagem de votos nulos foi de {100*nulos/tot:.2f}')
+print(f'A porcentagem de votos brancos foi de {100*brancos/tot:.2f}')
