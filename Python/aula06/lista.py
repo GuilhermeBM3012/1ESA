@@ -304,11 +304,11 @@ while True:
     if num < 25:
         intervalo_1 += 1
     elif num < 50:
-        intervalo_1 += 1
+        intervalo_2 += 1
     elif num < 75:
-        intervalo_1 += 1
+        intervalo_3 += 1
     elif num < 100:
-        intervalo_1 += 1
+        intervalo_4 += 1
     else:
         print('Tem q ser entre 0 e 10 ')
     
