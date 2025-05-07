@@ -33,7 +33,7 @@ print(f'Você digitou {pares} números pares e {i - pares} números ímpares ! '
 
 i = 0
 pares = 0
-while n < 5:
+while i < 5:
     n = int(input(f'Diga o {i + 1}º valor: '))
     if n % 2 == 0:
         pares += 1
