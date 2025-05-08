@@ -27,4 +27,16 @@ for i in range(20, 0, -2):  # vai do 20 ao 0, pulando 2
     print(i)
     i = 0
     print(i)
+    
+# ------------------------------------------------------------------------------
+# FIBONACCI
+a = 1
+b = 1
+num = int(input('qt? '))
+for i in range(num):  
+    c = a + b
+    a = b
+    b = c
+    print(i)
+
 
