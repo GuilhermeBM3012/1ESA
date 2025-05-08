@@ -347,15 +347,13 @@ while True:
         qnt_candidato_4 += 1
     elif num == 5:
         brancos += 1
-    elif num == 6:
-        nulos += 1
     else:
-        print('Tem q ser entre 0 e 10 ')
-
-    cont = input('Quer continuar [s/n]?\n-> ')
-    while not cont == 's' or cont == 'n':
-        cont = input('Quer continuar [s/n]?\n-> ')
-    if cont == 'n':
+        nulos += 1
+        
+    proxima = input("Quer continuar? (s/n)\n->")
+    while not (proxima == 's' or proxima == 'n'):
+        proxima = input("Quer continuar? (s/n)\n->")
+    if proxima == 'n':
         break
 tot = qnt_candidato_1 + qnt_candidato_2 + qnt_candidato_3 + qnt_candidato_4
 print(f'Joao - {qnt_candidato_1} votos'
