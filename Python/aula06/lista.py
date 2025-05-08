@@ -347,8 +347,10 @@ while True:
         qnt_candidato_4 += 1
     elif num == 5:
         brancos += 1
-    else:
+    elif num == 6:
         nulos += 1
+    else:
+        print('O n tem q ser entre 1 e 6')
         
     proxima = input("Quer continuar? (s/n)\n->")
     while not (proxima == 's' or proxima == 'n'):
