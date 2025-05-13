@@ -1,0 +1,21 @@
+.container {
+    border: solid red;
+    background-color: #287bf7;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    width: 111px;
+    flex-direction: column-reverse;
+    height: 600px;
+    justify-content: space-between;
+}
+.cont {
+    width: 100px;
+    height: 100px;
+    background-color: #3dd986;
+    border: dotted;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
