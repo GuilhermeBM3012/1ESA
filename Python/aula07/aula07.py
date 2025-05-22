@@ -107,7 +107,7 @@ print(f'Vc digitou {pares} nº pares, sua soma é {soma} e sua média é {media}
 # POR ÍNDICE:
 numeros = [9, 7, 3, 5, 2, 1, 8, 6, 0, 4]
 pares = media = soma = 0
-for i in range(len(numeros)):  # VER QUANTOSA PARES TEM
+for i in range(len(numeros)):  # VER QUANTOS PARES TEM
     if numeros[i] % 2 == 0:
         pares += 1
 for i in range(len(numeros)):  # CALCULAR A SOMA
