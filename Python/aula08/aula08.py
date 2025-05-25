@@ -84,20 +84,20 @@ print(f'De todos os numeros da lista, tem {pares} nº pares')
 # VER QUEM É O MAIOR ELEMNTO DA LISTA:
 def verMaior(listaNumeros):
     indice_maior = 0
-    maior = lista[indice_maior]
+    maior = listaNumeros[indice_maior]
     for i in range(len(listaNumeros)):
-        if lista[i] > maior:
-            maior = lista[i]
+        if listaNumeros[i] > maior:
+            maior = listaNumeros[i]
             indice_maior = i
     return indice_maior
 
 lista = [5, 2, 4, 5, 9, 1]
-maior = verMaior(lista)
 indice_maior = verMaior(lista)
-print(f'O maior numero é {maior}')
+print(f'O maior número é {lista[indice_maior]}')
+
 lista2 = [7, 4, 8, 9, 1, 0, 10, 3]
-maior = verMaior(lista2)
-print(f'O maior numero é {maior}')
+indice_maior = verMaior(lista2)
+print(f'O maior número é {lista2[indice_maior]}')
 
 # -------------------------------------------------------------------
 # MOSTRA A OPÇÃO DOS CARROS:
