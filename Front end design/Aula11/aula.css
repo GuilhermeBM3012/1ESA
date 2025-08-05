@@ -1,0 +1,57 @@
+.grid{
+    display: grid;
+    /* Isso significa que os filhos diretos desse elemento serão organizados em um layout de grade.*/
+    /* 2 colunas */
+    grid-template-columns: 300px 100px;
+    /* "300px" especifica a largura da primeira coluna e "100px" especifica a largura da segunda coluna */
+    /* 2 linhas */
+    /*grid-template-rows: 40px 100px;*/
+    /* "40px" especifica a altura da primeira linha e "100px" especifica a altura da segunda linha */
+
+    gap: 10px;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.grid > * {
+    background-color: orange;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+section#produtos{
+    grid-area: produtos;
+}
+section#serviços{
+    grid-area: servicos;
+}
+nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: publicidade;
+}
+
+#grade{
+    display:grid;
+    grid-template-areas:
+        "nav header header"
+        "nav produtos publicidade"
+        "nav servicos publicidade"
+        "nav footer footer";
+    grid-template-rows: 100px 1fr 1fr 75px;
+    grid-template-columns: 20% auto 15%;
+
+    height: 100vh; /* 100% da altura da viewport */
+    width: 100vw; /* 100% da largura da viewport */
+}
+
+.border{
+    border: 1px solid black;
+}
