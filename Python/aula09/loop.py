@@ -61,7 +61,6 @@ cont = 0
 while cont <= 10:
     print(f'{num} X {cont} = {num*cont}')
     cont += 1
-
 # COM FOR
 for i in range(11):
     print(f'Tabuada do {i}')
