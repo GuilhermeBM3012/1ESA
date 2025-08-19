@@ -1,0 +1,9 @@
+.col-md-1,
+.col-md-4,
+.col-md-6,
+.col-md-8{
+    background-color: lightgrey;
+    border: 1px solid grey;
+    height: 45px;
+    text-align: center;
+}
