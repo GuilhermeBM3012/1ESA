@@ -1,0 +1,37 @@
+<!--
+Propriedade (Props)-> faz a passagem de parametros de pai para filho
+
+Estados (state) -> sao estados fundamentais em react,que vai determinar e indicar um estado 
+para o meu COMPONENTE
+
+HOOKS -> sao funcoes especias, que permitem que os recurso do react, como Estados, Contexto,
+Ciclo de via do componente, possam passar as informaçoes necessarias dos seus recursos 
+Ex: useState - useEffect - useContext - ...
+
+- SINTAXE:
+
+useState -> é um hook, que permite que componentes funcionais possuam Estados, ou seja, 
+possam armazenar e atualizar os dados ao longo do tempo
+
+Const[state, setState] = useState(inicialState)
+Sendo que State -> é o nome da variavel que armazenará um Estado do componente funcional
+
+Sebdo que setState -> é o nome da funcao que será utilizada para fazer a atualizaçao do
+valor do Estado
+
+Sendo que initialState -> é o valor inicial do State, que é OBRIGATORIO, ter um 
+Estado inicial
+
+Sendo que useEffects -> é um do hooks mais importantes do react, ele permite que os 
+Componetes sejam atualizados em resposta a alteração em certas Propriedades, variaveis ou
+mesmo Eventos
+
+useEffects([funcao, dependencias])
+
+ONDE:
+Funcao -> é uma funcao que sera executada sempre que uma das variaveis de dependencia 
+sofrer uma mudanca de Estado
+
+Dependencias -> é um array, que pode receber uma - duas ou nenhuma variavel de Estado,
+que funcionanm como um gatilho para que a useEffect execute a funcao definida
+-->
