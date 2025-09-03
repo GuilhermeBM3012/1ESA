@@ -170,7 +170,6 @@ def criar_matriz(linhas, colunas):
     return matriz
 
 def circulo(matriz):
-    circulo = criaMatriz(1000, 1000)
     raio = len(circulo)/2
     for i in range(len(circulo)):
         for j in range(len(circulo[0])):
