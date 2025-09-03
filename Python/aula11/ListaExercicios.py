@@ -21,42 +21,63 @@ def criaMatriz(linhas, colunas):
 
 
 # 3 -
-for i in range(len(diagonal)):
-    diagonal[i][i] = 1
+def diagonal(matriz):
+    for i in range(len(diagonal)):
+        diagonal[i][i] = 1
+    return
 
 
 # 4 -
-for i in range(len(matriz)):
-    matriz[i][len(matriz) - i - 1] = 1
+def contra_diagonal(matriz):
+    for i in range(len(matriz)):
+        matriz[i][len(matriz) - i - 1] = 1
+    return
 
 
 # 5 -
+def triangulo(matriz):
+    for i in range(len(matriz)):
+        for j in range(i + 1, len(matriz[0])):
+            matriz[i][j] = 1
+            matriz[j][i] = 2
+        return
 
 
 # 6 -
+def matriz_transposta(matriz):
+    for i in range(len(matriz)):
+        for j in range(i):
+            aux = matriz[i][j]
+            matriz[i][j] = matriz[j][i]
+            matriz[j][i] = aux
+    return
 
 
 # 7 -
 
 
 # 8 -
-for i in range(len(xadrez)):
-    for j in range(len(xadrez[0])):
-        if i % 2 == j % 2:
-            xadrez[i][j] = 0
-        else:
-            xadrez[i][j] = 1
+def xadrez(matriz):
+    for i in range(len(xadrez)):
+        for j in range(len(xadrez[0])):
+            if i % 2 == j % 2:
+                xadrez[i][j] = 0
+            else:
+                xadrez[i][j] = 1
+    return
 
 
 # 9 -
-circulo = criaMatriz(1000, 1000)
-raio = len(circulo)/2
-for i in range(len(circulo)):
-    for j in range(len(circulo[0])):
-        if (i - raio)**2 + (j - raio)**2 <= raio**2:
-            circulo[i][j] = 1
-        else:
-            circulo[i][j] = 0
+def circulo(matriz):
+    circulo = criaMatriz(1000, 1000)
+    raio = len(circulo)/2
+    for i in range(len(circulo)):
+        for j in range(len(circulo[0])):
+            if (i - raio)**2 + (j - raio)**2 <= raio**2:
+                circulo[i][j] = 1
+            else:
+                circulo[i][j] = 0
+    return
 
 
 # 10 -
