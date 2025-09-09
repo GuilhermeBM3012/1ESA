@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1>BREAKPOINTS</h1><br>
+    <div class="bg-red-500 md:bg-green-500 lg:bg-blue-500 m-2">Cor muda com o tamanho da tela</div> 
+    <!--500 = intensidade da cor e para chamar o hexadcimal: [#a cor q quer]-->
+    <br>
+
+    <h1>GRID E FLEX BOX</h1><br>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-2">
+        <div class="bg-gray-200 p-4">Item 1</div>
+        <div class="bg-gray-200 p-4">Item 2</div>
+        <div class="bg-gray-200 p-4">Item 3</div>
+    </div><br>
+
+    <h1>TRANSIÇÕES E ANIMAÇÕES</h1><br>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 m-2">
+        Hover me
+    </button><br><br>
+
+    <div class="w-16 h-16 bg-purple-500 animate-bounce m-2"></div>
+    <div class="w-16 h-16 bg-purple-500 animate-spin m-2"></div><br><br>
+
+    <h1>EXEMPLO PRATICO</h1><br>
+    <body>
+    <div class="max-w-sm mx-auto mt-10 p-6 bg-gray rounded-xl shadow-md hover:shadow-xl transform hover:scale-105 
+    transition duration-500">
+        <h2 class="text-xl font-bold text-black">Título do Card</h2>
+        <p class="mt-2 text-black">Esse é um exemplo de card animado e responsivo com Tailwind CSS.</p>
+    </div>
+</body>
+</html>
