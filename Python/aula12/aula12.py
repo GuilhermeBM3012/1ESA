@@ -104,7 +104,7 @@ dic ={
 
 for i in range(len(dic['nome'])):
     for key in dic.keys():  # passa por todas as chaves mostrando o conteudo daquela chave
-        print(f'{key} : {dic[key[i]]}')
+        print(f'{key} : {dic[key][i]}')
     print()
 
 print('-------------------------------------------------------------------')
