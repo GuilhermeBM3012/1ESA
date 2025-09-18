@@ -90,7 +90,7 @@ num={
 
 tel = input('Digite seu telefone, de forma extensa(exemplo: nove):')
 for key in num.keys():
-    tel = tel.replace(key, num[tel])
+    tel = tel.replace(key, num[key])
 tel = tel.replace(' ', '') # remove os espaços
 print(f'O seu nº é: {tel}')
 
