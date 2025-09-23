@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-4 flex-1 flex flex-col items-center">
+    <h1 class="text-4xl font-bold">Botao que mostra um alerta</h1><br><br>
+
+    <button id="botao" class="bg-red-500 hover:bg-red-700 text-white rounded transition duration-300 
+    ease-in-out w-[110px] h-[45px]">Mostrar alerta</button><br><br>
+
+    <div id="alerta" class="hidden flex items-center justify-center text-red-800 bg-red-200 font-bold 
+    rounded w-[290px] h-[45px] text-center">Isso não é um teste. SAIAM TODOS!!!</div>
+
+    <script>
+        const btn = document.getElementById('botao')
+        const alerta = document.getElementById('alerta');
+        btn.addEventListener('click', () => {
+            alerta.classList.toggle('hidden');
+        })
+    </script>
+</body>
+</html>
