@@ -57,14 +57,22 @@ print(f'\n-----------------------------------'
       f'\n-----------------------------------')
 
 while True:
-    # MUDAR AS LINHAS 60 A 70
-    crud = forca_opcao('Oq vc deseja fazer: ', listaCrud)
-    indice = acha_index(listaCrud, crud)
-    if indice == 0:
+    for v in listaCrud.values():
+        print(f'{v}')
+
+    escolha = input('Qual opção vc deseja?\n->')
+    while not escolha.isnumeric():
+        escolha = input('Qual opção vc deseja?\n->')
+    escolha = int(escolha)
+    
+    while escolha not in listaCrud:
+        print('Opção inválida. Escolha uma opção de 1 a 4!! ')
+        escolha = input('Qual opção vc deseja?\n->')
+    if escolha == 1:
         informacoes()
-    elif indice == 1:
+    elif escolha == 2:
         adicionar()
-    elif indice == 2:
+    elif escolha == 3:
         remover()
     else:
         atualizar()
@@ -73,4 +81,5 @@ while True:
     while cont not in ('S', 'N'):
         cont = input('Gostaria de continuar comprando? ').upper()
     if cont == 'N':
+        print('Obrigado pela visita!! :)')
         break
