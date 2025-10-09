@@ -19,6 +19,15 @@ carrinho ={
 }
 
 # --- FUNÇOES Q GERAIS PARA AJUDAR AS OUTRAS FUNÇÕES ---
+def printa_dic(dic,num=0):
+    for key in dic.keys():
+        if type(dic[key]) is dict:
+            print(key)
+            printa_dic(dic[key],num+1)
+        else:
+            print(f"{num*'  '}{key} : {dic[key]}")
+    return
+    
 def forca_opcao(msg, listaOpcoes):
     msg += '\n' + ' --- '.join(listaOpcoes) + '\n->'
     opcoes = input(msg)
@@ -102,21 +111,20 @@ def comprar():
     return
 
 def confirmarCompra():
-    print('Essas sao as informacoes da sua compra: ')
-    print(carrinho)
-    alterar = forca_opcao('Qr remover um item: ', ['Sim', 'Não'])
-    if alterar == 'Sim':
-        item = forca_opcao('Qual item vc irá remover? ', carrinho['Itens'].keys())
+    print("Essas são as infos da sua compra: ")
+    printa_dic(carrinho)
+    alterar = forca_opcao("Deseja remover algum item?",['s','n'])
+    if alterar == 's':
+        item = forca_opcao("Qual item vc irá remover?",carrinho['Itens'].keys())
         indice = indices[item]
-        qtd = verificaNum(f'Qnts kg de {item} serã removidos? ')
+        qtd = verifica_numero(f"Quantos kg de {item} serão removidos?")
         if qtd <= carrinho['Itens'][item]:
             carrinho['Itens'][item] -= qtd
-            carrinho['Valor Total'] -= qtd * acougue['Preço/kg'][indice]
+            carrinho['Valor Total'] -= qtd*acougue['Preço/kg'][indice]
         else:
-            print(f'Não é possivel remover esse tanto pois so ha {carrinho['Itens'][item]}kg')
+            print(f"Não é possível remover esse tanto pois só há {carrinho['Itens'][item]}kg")
         confirmarCompra()
     return
-
 
 def cadastro_endereco():
     while True:
