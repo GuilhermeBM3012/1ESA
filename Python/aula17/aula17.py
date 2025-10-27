@@ -1,5 +1,5 @@
 # ORDENANDO UMA LISTA COM 8 NUMS (SELECTION SORT)
-'''def acha_menor(lista):
+def acha_menor(lista):
     indiceMenor = 0
     for i in range(len(lista)):
         if lista[i] < lista[indiceMenor]:
@@ -38,7 +38,7 @@ def bubbleSort(lista):
 
 lista = [5, 0, 4, 1, 2, 7, 6, 3]
 ordenada = bubbleSort(lista)
-print(ordenada)'''
+print(ordenada)
 
 print('---'*40)
 
